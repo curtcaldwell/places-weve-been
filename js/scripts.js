@@ -1,29 +1,37 @@
 //business logic
-function Contact(first, last) {
-  this.firstName = first;
-  this.lastName = last;
+function Place(place, time, cities, food,) {
+  this.place = place;
+  this.time = time;
+  this.cities = cities;
+  this.food = food;
 }
 
 //user interface logic
 $(function () {
-  $("form#new-contact").submit(function (event) {
+  $("form#new-place").submit(function (event) {
     event.preventDefault();
 
-    var inputtedFirstName = $("input#new-first-name").val();
-    var inputtedLastName = $("input#new-last-name").val();
+    var inputtedPlace = $("input#new-place").val();
+    var inputtedTime = $("input#new-time").val();
+    var inputtedCities = $("input#new-cities").val();
+    var inputtedFood = $("input#new-food").val();
 
-    var newContact = new Contact(inputtedFirstName, inputtedLastName);
 
-    $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName + " " + newContact.lastName + "</span></li>");
+    var newPlace = new Place(inputtedPlace, inputtedTime, inputtedCities, inputtedFood);
+    $("ul#places").append("<li><span class='list-place'>" + newPlace.place + "</span></li>");
 
-    $(".contact").last().click(function () {
-      $("#show-contact").show();
-      $("#show-contact h2").text(newContact.firstName);
-      $(".first-name").text(newContact.firstName);
-      $(".last-name").text(newContact.lastName);
+    $(".list-place").last().click(function () {
+      $("#show-place").show();
+      $("#show-place h2").text(newPlace.place);
+      $(".place").text(newPlace.place);
+      $(".time").text(newPlace.time);
+      $(".cities").text(newPlace.cities);
+      $(".food").text(newPlace.food);
     });
 
-    $("input#new-first-name").val("");
-    $("input#new-last-name").val("");
+    $("input#new-place").val("");
+    $("input#new-time").val("");
+    $("input#new-cities").val("");
+    $("input#new-food").val("");
   });
 });
