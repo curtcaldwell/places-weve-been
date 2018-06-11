@@ -1,17 +1,12 @@
-# _Beep-Boop Proeject_
+# _Places weve been_
 
-#### _The application will modify numbers with 0,1 and numbers divisible by 3. 06.08.18_
+#### _The webpage will log information about trips that youve taken. 06.11.18_
 
-#### By _**Eliot Charette**_
+#### By _**Eliot Charette and Curt Caldwell**_
 
 ## Description
 
-_Program recognizes only numbers (1,2,3,4,5,6,7,8,9,0).
-Program will only greet positive integers, negative integers will be greeted with, "Please enter a positive number."
-Program will loop from 0 until the number input by the user.
-Program will replace numbers in the array that contain a 0 with a "Beep!"
-Program will replace numbers in the array that contain a 1 with a "Boop!"
-Program will replace all numbers divisible by 3 with "I'm sorry, Dave I'm afraid I can't do that."_
+_Program will take the inputted data about a users travels to a location, the cities visited, the time of travel and favorite food. It will then return a object class with the data listed._
 
 ## _Setup/Installation Requirements_
 
@@ -22,7 +17,7 @@ Program will replace all numbers divisible by 3 with "I'm sorry, Dave I'm afraid
 
 ## Support and contact details
 
-_For any questions please contact EliotCharette@gmail.com_
+_For any questions please contact EliotCharette@gmail.com or Curt.Caldwell24@gmail.com_
 
 ## Technologies Used
 
@@ -32,4 +27,4 @@ _HTML, CSS, Bootstrap, Jquery, JavaScript, Atom, Terminal Command._
 
 *Licensed under MIT*
 
-Copyright (c) 2018 **_{Eliot Charette}_**
+Copyright (c) 2018 **_{Eliot Charette and Curt Caldwell}_**
